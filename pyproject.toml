@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spar-model"
+version = "0.1.0"
+description = "Sequential Pattern Averaging Regressor - A non-parametric time series forecasting model"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Sofien Kaabar, CFA", email = "sofien-kaabar@hotmail.com"}
+]
+keywords = ["time-series", "forecasting", "pattern-recognition", "finance", "trading", "machine-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numpy>=1.20.0",
+]
+
+[project.optional-dependencies]
+fast = ["numba>=0.50.0"]
+examples = ["yfinance", "matplotlib"]
+dev = ["pytest", "yfinance", "matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/sofienkaabar/spar-model"
+Repository = "https://github.com/sofienkaabar/spar-model"
+Issues = "https://github.com/sofienkaabar/spar-model/issues"
