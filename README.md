@@ -183,14 +183,6 @@ The number of possible patterns grows exponentially:
 
 **Rule of thumb:** Use `field` where you have at least 10× more data points than possible patterns.
 
-## Performance on Synthetic Data
-
-| Data Type | Clean | 25% Noise | 75% Noise |
-|-----------|-------|-----------|-----------|
-| Deterministic | 100% | 85-92% | 65-75% |
-| Sine Wave | 94-96% | 70-80% | 50-60% |
-| Composite Wave | 68-79% | 55-65% | 45-55% |
-
 ## When to Use SPAR
 
 **Good for:**
